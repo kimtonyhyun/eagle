@@ -74,21 +74,6 @@
 <wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
 <circle x="-0.635" y="1.905" radius="0.2" width="0.127" layer="21"/>
 </package>
-<package name="MSOP-10">
-<smd name="P$1" x="-1" y="-2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$2" x="-0.5" y="-2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$3" x="0" y="-2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$4" x="0.5" y="-2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$5" x="1" y="-2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$6" x="1" y="2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$7" x="0.5" y="2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$8" x="0" y="2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$9" x="-0.5" y="2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$10" x="-1" y="2.11" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
-<circle x="-1" y="-1" radius="0.2" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="AD780">
@@ -102,22 +87,6 @@
 <pin name="TRIM" x="-15.24" y="-5.08" length="middle"/>
 <pin name="VOUT" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="OP_SEL" x="-15.24" y="-2.54" length="middle"/>
-</symbol>
-<symbol name="AD8250">
-<pin name="+IN" x="-17.78" y="-2.54" length="middle"/>
-<pin name="-IN" x="-17.78" y="-5.08" length="middle"/>
-<pin name="A0" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="A1" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="DGND" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="WR_BAR" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="+VS" x="-17.78" y="5.08" length="middle"/>
-<pin name="-VS" x="-17.78" y="2.54" length="middle"/>
-<pin name="VOUT" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="VREF" x="17.78" y="5.08" length="middle" rot="R180"/>
-<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -134,30 +103,6 @@
 <connect gate="G$1" pin="TRIM" pad="P$5"/>
 <connect gate="G$1" pin="VCC" pad="P$2"/>
 <connect gate="G$1" pin="VOUT" pad="P$6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AD8250">
-<gates>
-<gate name="G$1" symbol="AD8250" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MSOP-10">
-<connects>
-<connect gate="G$1" pin="+IN" pad="P$10"/>
-<connect gate="G$1" pin="+VS" pad="P$8"/>
-<connect gate="G$1" pin="-IN" pad="P$1"/>
-<connect gate="G$1" pin="-VS" pad="P$3"/>
-<connect gate="G$1" pin="A0" pad="P$4"/>
-<connect gate="G$1" pin="A1" pad="P$5"/>
-<connect gate="G$1" pin="DGND" pad="P$2"/>
-<connect gate="G$1" pin="VOUT" pad="P$7"/>
-<connect gate="G$1" pin="VREF" pad="P$9"/>
-<connect gate="G$1" pin="WR_BAR" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
