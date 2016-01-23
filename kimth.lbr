@@ -117,6 +117,17 @@
 <wire x1="-19.6" y1="-11.57" x2="-19.6" y2="3.43" width="0.127" layer="21"/>
 <wire x1="19.6" y1="-11.57" x2="19.6" y2="3.43" width="0.127" layer="21"/>
 </package>
+<package name="RAPC10P">
+<hole x="0" y="0" drill="1.8"/>
+<pad name="P$1" x="4.5" y="0" drill="3.05"/>
+<pad name="P$2" x="10.79" y="0" drill="3.56"/>
+<pad name="P$3" x="7.77" y="-4.8" drill="3.05"/>
+<wire x1="-4.37" y1="-5" x2="-4.37" y2="5" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="5" x2="11" y2="5" width="0.127" layer="21"/>
+<wire x1="11" y1="5" x2="11" y2="3" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="-5" x2="5" y2="-5" width="0.127" layer="21"/>
+<wire x1="11" y1="-5" x2="11" y2="-3" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AD780">
@@ -148,26 +159,35 @@
 <wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 </symbol>
 <symbol name="DB15">
-<pin name="P$1" x="-15.24" y="10.16" length="middle"/>
-<pin name="P$2" x="-15.24" y="7.62" length="middle"/>
-<pin name="P$3" x="-15.24" y="5.08" length="middle"/>
-<pin name="P$4" x="-15.24" y="2.54" length="middle"/>
-<pin name="P$5" x="-15.24" y="0" length="middle"/>
-<pin name="P$6" x="-15.24" y="-2.54" length="middle"/>
-<pin name="P$7" x="-15.24" y="-5.08" length="middle"/>
-<pin name="P$8" x="-15.24" y="-7.62" length="middle"/>
-<pin name="P$9" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="P$10" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="P$11" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="P$12" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="P$13" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="P$14" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="P$15" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="DB1" x="-15.24" y="10.16" length="middle"/>
+<pin name="DB2" x="-15.24" y="7.62" length="middle"/>
+<pin name="DB3" x="-15.24" y="5.08" length="middle"/>
+<pin name="DB4" x="-15.24" y="2.54" length="middle"/>
+<pin name="DB5" x="-15.24" y="0" length="middle"/>
+<pin name="DB6" x="-15.24" y="-2.54" length="middle"/>
+<pin name="DB7" x="-15.24" y="-5.08" length="middle"/>
+<pin name="DB8" x="-15.24" y="-7.62" length="middle"/>
+<pin name="DB9" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="DB10" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="DB11" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="DB12" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="DB13" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="DB14" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="DB15" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="12.7" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RAPC10P">
+<pin name="CENTER" x="-12.7" y="5.08" length="middle"/>
+<pin name="SHUNT" x="-12.7" y="0" length="middle"/>
+<pin name="SLEEVE" x="-12.7" y="-5.08" length="middle"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -223,21 +243,40 @@
 <devices>
 <device name="" package="DB15">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$10" pad="P$10"/>
-<connect gate="G$1" pin="P$11" pad="P$11"/>
-<connect gate="G$1" pin="P$12" pad="P$12"/>
-<connect gate="G$1" pin="P$13" pad="P$13"/>
-<connect gate="G$1" pin="P$14" pad="P$14"/>
-<connect gate="G$1" pin="P$15" pad="P$15"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-<connect gate="G$1" pin="P$5" pad="P$5"/>
-<connect gate="G$1" pin="P$6" pad="P$6"/>
-<connect gate="G$1" pin="P$7" pad="P$7"/>
-<connect gate="G$1" pin="P$8" pad="P$8"/>
-<connect gate="G$1" pin="P$9" pad="P$9"/>
+<connect gate="G$1" pin="DB1" pad="P$1"/>
+<connect gate="G$1" pin="DB10" pad="P$10"/>
+<connect gate="G$1" pin="DB11" pad="P$11"/>
+<connect gate="G$1" pin="DB12" pad="P$12"/>
+<connect gate="G$1" pin="DB13" pad="P$13"/>
+<connect gate="G$1" pin="DB14" pad="P$14"/>
+<connect gate="G$1" pin="DB15" pad="P$15"/>
+<connect gate="G$1" pin="DB2" pad="P$2"/>
+<connect gate="G$1" pin="DB3" pad="P$3"/>
+<connect gate="G$1" pin="DB4" pad="P$4"/>
+<connect gate="G$1" pin="DB5" pad="P$5"/>
+<connect gate="G$1" pin="DB6" pad="P$6"/>
+<connect gate="G$1" pin="DB7" pad="P$7"/>
+<connect gate="G$1" pin="DB8" pad="P$8"/>
+<connect gate="G$1" pin="DB9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RAPC10P">
+<description>Switchcraft RAPC10P
+DIGIKEY SC1941-ND</description>
+<gates>
+<gate name="G$1" symbol="RAPC10P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RAPC10P">
+<connects>
+<connect gate="G$1" pin="CENTER" pad="P$2"/>
+<connect gate="G$1" pin="SHUNT" pad="P$3"/>
+<connect gate="G$1" pin="SLEEVE" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
