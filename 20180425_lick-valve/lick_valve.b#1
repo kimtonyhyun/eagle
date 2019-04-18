@@ -109,10 +109,12 @@
 </layers>
 <board>
 <plain>
-<wire x1="38.1" y1="0" x2="38.1" y2="1.27" width="0" layer="20"/>
-<wire x1="38.1" y1="27.94" x2="36.83" y2="27.94" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0" layer="20"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="27.94" width="0" layer="20"/>
+<wire x1="38.1" y1="27.94" x2="0" y2="27.94" width="0" layer="20"/>
+<wire x1="0" y1="27.94" x2="0" y2="0" width="0" layer="20"/>
 <text x="12.7" y="26.035" size="1.016" layer="25">GND</text>
-<text x="37.465" y="18.415" size="1.016" layer="25" rot="R90">DOSE</text>
+<text x="32.385" y="17.78" size="1.016" layer="25" rot="R90">DOSE</text>
 <text x="27.305" y="5.715" size="1.016" layer="25" rot="R90">LICK</text>
 <text x="9.525" y="26.035" size="1.016" layer="25">5V</text>
 <text x="1.27" y="1.27" size="0.762" layer="25">LICK_VALVE
@@ -123,16 +125,7 @@ KIMTH@STANFORD.EDU</text>
 <text x="5.715" y="10.795" size="1.016" layer="25">SPOUT</text>
 <text x="5.715" y="8.255" size="1.016" layer="25">GND</text>
 <text x="5.715" y="13.335" size="1.016" layer="25">5V</text>
-<text x="37.465" y="3.175" size="1.016" layer="25" rot="R90">VALVE</text>
-<text x="37.465" y="10.795" size="1.016" layer="25" rot="R90">PRIME</text>
-<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0" layer="20" curve="-90"/>
-<wire x1="0" y1="1.27" x2="0" y2="26.67" width="0" layer="20"/>
-<wire x1="0" y1="26.67" x2="1.27" y2="27.94" width="0" layer="20" curve="-90"/>
-<wire x1="1.27" y1="27.94" x2="36.83" y2="27.94" width="0" layer="20"/>
-<wire x1="36.83" y1="27.94" x2="38.1" y2="26.67" width="0" layer="20" curve="-90"/>
-<wire x1="38.1" y1="26.67" x2="38.1" y2="1.27" width="0" layer="20"/>
-<wire x1="38.1" y1="1.27" x2="36.83" y2="0" width="0" layer="20" curve="-90"/>
-<wire x1="36.83" y1="0" x2="1.27" y2="0" width="0" layer="20"/>
+<text x="32.385" y="5.715" size="1.016" layer="25" rot="R90">VALVE</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -510,9 +503,9 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="JP3" library="SparkFun-Connectors" package="1X06" value="" x="5.08" y="24.13"/>
-<element name="JP5" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="34.29" y="6.35" rot="R270"/>
+<element name="JP5" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="34.29" y="8.89" rot="R270"/>
 <element name="U$1" library="kimth" package="TLP701" value="TLP701" x="27.94" y="17.78" rot="R180"/>
-<element name="R1" library="SparkFun-Passives" package="1206" value="" x="31.75" y="24.765" rot="R180"/>
+<element name="R1" library="SparkFun-Passives" package="1206" value="" x="31.75" y="24.13" rot="R180"/>
 <element name="C1" library="SparkFun-Passives" package="1206" value="" x="19.05" y="20.32" rot="R180"/>
 <element name="R2" library="SparkFun-Passives" package="1206" value="" x="10.16" y="15.24" rot="R270"/>
 <element name="R3" library="SparkFun-Passives" package="1206" value="" x="10.16" y="7.62" rot="R90"/>
@@ -523,8 +516,7 @@ design rules under a new name.</description>
 <element name="C2" library="SparkFun-Passives" package="1206" value="" x="5.08" y="19.05" rot="R180"/>
 <element name="JP1" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="29.21" y="3.81" rot="R180"/>
 <element name="JP2" library="pinhead" package="1X03" value="" x="3.81" y="11.43" rot="R90"/>
-<element name="JP4" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="34.29" y="19.05" rot="R90"/>
-<element name="JP6" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="34.29" y="13.97" rot="R270"/>
+<element name="JP4" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="34.29" y="16.51" rot="R90"/>
 </elements>
 <signals>
 <signal name="12V">
@@ -537,9 +529,6 @@ design rules under a new name.</description>
 <wire x1="29.21" y1="15.875" x2="29.21" y2="13.555" width="0.6096" layer="1"/>
 <wire x1="20.45" y1="20.32" x2="22.86" y2="20.32" width="1.27" layer="1"/>
 <wire x1="22.86" y1="20.32" x2="23.8125" y2="21.2725" width="1.27" layer="1"/>
-<contactref element="JP6" pad="1"/>
-<wire x1="34.29" y1="13.97" x2="32.385" y2="15.875" width="1.27" layer="1"/>
-<wire x1="32.385" y1="15.875" x2="29.21" y2="15.875" width="1.27" layer="1"/>
 </signal>
 <signal name="GND">
 <polygon width="0.254" layer="1">
@@ -567,7 +556,6 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="1"/>
 <contactref element="JP2" pad="1"/>
 <contactref element="JP4" pad="1"/>
-<contactref element="JP6" pad="2"/>
 </signal>
 <signal name="LICK">
 <contactref element="R2" pad="2"/>
@@ -582,20 +570,20 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="U$1" pad="P$1"/>
 <contactref element="R1" pad="2"/>
-<wire x1="29.21" y1="22.005" x2="29.21" y2="23.625" width="0.6096" layer="1"/>
-<wire x1="29.21" y1="23.625" x2="30.35" y2="24.765" width="0.6096" layer="1"/>
+<wire x1="29.21" y1="22.005" x2="29.21" y2="22.99" width="0.6096" layer="1"/>
+<wire x1="29.21" y1="22.99" x2="30.35" y2="24.13" width="0.6096" layer="1"/>
 </signal>
 <signal name="DOSE">
 <contactref element="R1" pad="1"/>
 <contactref element="JP4" pad="2"/>
-<wire x1="33.15" y1="24.765" x2="34.29" y2="23.625" width="1.27" layer="1"/>
-<wire x1="34.29" y1="23.625" x2="34.29" y2="21.59" width="1.27" layer="1"/>
+<wire x1="33.15" y1="24.13" x2="34.29" y2="22.99" width="1.27" layer="1"/>
+<wire x1="34.29" y1="22.99" x2="34.29" y2="19.05" width="1.27" layer="1"/>
 </signal>
 <signal name="VALVE">
 <contactref element="JP5" pad="1"/>
 <contactref element="U$1" pad="P$5"/>
-<wire x1="34.29" y1="6.35" x2="29.21" y2="11.43" width="1.27" layer="1"/>
-<wire x1="29.21" y1="11.43" x2="27.94" y2="11.43" width="1.27" layer="1"/>
+<wire x1="34.29" y1="8.89" x2="31.75" y2="11.43" width="1.27" layer="1"/>
+<wire x1="31.75" y1="11.43" x2="27.94" y2="11.43" width="1.27" layer="1"/>
 <wire x1="27.94" y1="11.43" x2="27.94" y2="13.555" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$4">
