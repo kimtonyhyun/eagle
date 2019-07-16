@@ -1,7 +1,7 @@
 [Eagle]
 Version="07 05 00"
 Platform="Windows"
-Serial="7122D6453F-LSR-WLM-1SS"
+Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
 Desktop="Desktop"
 
@@ -377,10 +377,11 @@ UsedLibrary="C:/Users/kimth/Documents/SparkFun-Eagle-Libraries/SparkFun-Retired.
 UsedLibrary="C:/Users/kimth/Documents/SparkFun-Eagle-Libraries/SparkFun-RF.lbr"
 UsedLibrary="C:/Users/kimth/Documents/SparkFun-Eagle-Libraries/SparkFun-Sensors.lbr"
 UsedLibrary="C:/Users/kimth/Documents/SparkFun-Eagle-Libraries/SparkFun-Switches.lbr"
+UsedLibrary="C:/Users/kimth/Documents/SparkFun-Eagle-Libraries/User-Submitted.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="355 926 1926 1621"
+Loc="166 699 1737 1394"
 State=2
 Number=0
 
