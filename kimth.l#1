@@ -128,23 +128,6 @@
 <wire x1="-4.37" y1="-5" x2="5" y2="-5" width="0.127" layer="21"/>
 <wire x1="11" y1="-5" x2="11" y2="-3" width="0.127" layer="21"/>
 </package>
-<package name="POLOLU_MAX14870">
-<pad name="P$1" x="-6.35" y="5.08" drill="0.8" shape="square"/>
-<pad name="P$2" x="-6.35" y="2.54" drill="0.8"/>
-<pad name="P$3" x="-6.35" y="0" drill="0.8"/>
-<pad name="P$4" x="-6.35" y="-2.54" drill="0.8"/>
-<pad name="P$5" x="-6.35" y="-5.08" drill="0.8"/>
-<pad name="P$6" x="6.35" y="-5.08" drill="0.8"/>
-<pad name="P$7" x="6.35" y="-2.54" drill="0.8"/>
-<pad name="P$8" x="6.35" y="0" drill="0.8"/>
-<pad name="P$9" x="6.35" y="2.54" drill="0.8"/>
-<pad name="P$10" x="6.35" y="5.08" drill="0.8"/>
-<wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="6.35" x2="7.62" y2="-6.35" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="-6.35" x2="-7.62" y2="-6.35" width="0.2032" layer="21"/>
-<wire x1="-7.62" y1="-6.35" x2="-7.62" y2="6.35" width="0.2032" layer="21"/>
-<text x="0.635" y="-4.445" size="1.27" layer="21" rot="R90">MAX14870</text>
-</package>
 </packages>
 <symbols>
 <symbol name="AD780">
@@ -205,22 +188,6 @@
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-</symbol>
-<symbol name="POLOLU_MAX14870">
-<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<pin name="VM" x="-15.24" y="10.16" length="middle"/>
-<pin name="M1" x="-15.24" y="5.08" length="middle"/>
-<pin name="M2" x="-15.24" y="0" length="middle"/>
-<pin name="VIN" x="-15.24" y="-5.08" length="middle"/>
-<pin name="GND" x="-15.24" y="-10.16" length="middle"/>
-<pin name="GND_D" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<pin name="!EN" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="!FLT" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="DIR" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="PWM" x="15.24" y="10.16" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -310,30 +277,6 @@ DIGIKEY SC1941-ND</description>
 <connect gate="G$1" pin="CENTER" pad="P$2"/>
 <connect gate="G$1" pin="SHUNT" pad="P$3"/>
 <connect gate="G$1" pin="SLEEVE" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="POLOLU_MAX14870">
-<gates>
-<gate name="G$1" symbol="POLOLU_MAX14870" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="POLOLU_MAX14870">
-<connects>
-<connect gate="G$1" pin="!EN" pad="P$7"/>
-<connect gate="G$1" pin="!FLT" pad="P$8"/>
-<connect gate="G$1" pin="DIR" pad="P$9"/>
-<connect gate="G$1" pin="GND" pad="P$5"/>
-<connect gate="G$1" pin="GND_D" pad="P$6"/>
-<connect gate="G$1" pin="M1" pad="P$2"/>
-<connect gate="G$1" pin="M2" pad="P$3"/>
-<connect gate="G$1" pin="PWM" pad="P$10"/>
-<connect gate="G$1" pin="VIN" pad="P$4"/>
-<connect gate="G$1" pin="VM" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
